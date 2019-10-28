@@ -39,4 +39,11 @@ table, td, th {
   background-image: url("images/text.png");
   background-repeat: no-repeat;
   background-size: 100% auto;
+  margin: 100%;
+  vertical-align: top;
+}
+
+.test {
+  margin-top: 16%;
+  margin-left: 1.4%;
 }
