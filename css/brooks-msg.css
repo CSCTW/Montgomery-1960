@@ -1,0 +1,39 @@
+.swirl {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  width: 80%;
+  height: 80%;
+  background: url(../images/swirl.svg);
+  background-size: 100% 100%;
+}
+.s-bubble {
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  background: #4278f5;
+  border-radius: 50%;
+}
+.text-bubble {
+  position: relative;
+  left: 4vw;
+  width: 91vw;
+  height: 15vw;
+  max-height: 150px;
+  max-width: 910px;
+  display:inline-table;
+}
+.text-bubble td {
+  position: relative;
+}
+.b-title {
+  font-family: Arial, Helvetica, sans-serif;
+  left: 3%;
+  position: relative;
+  font-size: calc(24px + (140 - 14) * ((40vw - 0px) / (1000 - 0)));
+}
+.s-bubble-contain{
+  width: 16.7%;
+  max-width: 150px;
+}
