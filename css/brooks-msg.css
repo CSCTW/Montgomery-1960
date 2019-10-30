@@ -14,6 +14,7 @@
   height: 100%;
   background: #4278f5;
   border-radius: 50%;
+  max-width: 200px;
 }
 .text-bubble {
   align-self: center;
@@ -21,10 +22,11 @@
   left: .1vw;
   width: 100%;
   height: 16vw;
-  max-height: 300px;
+  max-height: 200px;
   display:inline-table;
 }
 .text-bubble td {
+  vertical-align: bottom;
   position: relative;
 }
 .b-title {
@@ -34,11 +36,12 @@
   font-size: calc(2px + (260 - 14) * ((40vw - 0px) / (1000 - 0)));
 }
 .s-bubble-contain{
-  width: 17%;
-  max-width: 150px;
+  width: 18%;
+  max-width: 200px;
 }
 .speech-bubble {
   font-size: 2vh;
+  color: white;
   padding-left: 10px;
   padding-top: 8px;
   padding-bottom: 8px;
