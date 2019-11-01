@@ -3,10 +3,11 @@
   --main-text: white;
   --bubble-text: var(--main-text);
   --link-text: var(--main-text);
+  --guide-text: black;
 
   /* backgrounds */
-  --brooks-back: blue;
-  --speech-back: coral;
+  --brooks-back: #4287f5;
+  --speech-back: #4287f5;
   --footer-back: grey;
   --info-back:   grey;
 }
@@ -36,6 +37,7 @@ body {
 
 .guide {
   background-color: var(--info-back);
+  color: var(--guide-text);
   width: 50px;
   font-size: 12px;
 }
@@ -71,7 +73,7 @@ table, td, th {
 }
 
 .brooks-text {
-  background-image: url("images/text.png");
+  background-image: url("..images/text.png");
   background-repeat: no-repeat;
   background-size: 100% auto;
   margin: 100%;
@@ -83,14 +85,28 @@ table, td, th {
   top: 45%;
   width: 64px;
   height: 64px;
-  background: #4278f5;
+  background: var(--info-back);
   border-radius: 50%;
-  max-width: 200px;
+  outline: 0;
+  border: 0;
+  background-image: url("../images/arrow.svg");
+  background-position: 60% 50%;
+  background-size: 75%;
+  background-repeat: no-repeat;
 }
 .exp-guide:hover {
+  background-position: 90% 50%;
   cursor: pointer;
 }
 
 .exp-guide:active {
-  background: yellow;
+  background: LightGray;
+  background-image: url("../images/arrow.svg");
+  background-position: 110% 50%;
+  background-size: 75%;
+  background-repeat: no-repeat;
+}
+
+body {
+  overflow-x: hidden;
 }

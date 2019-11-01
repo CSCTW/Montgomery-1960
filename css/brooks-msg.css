@@ -41,10 +41,12 @@
   position: relative;
 }
 .b-title {
+  top: -10px;
+  vertical-align: text-bottom;
   font-family: Arial, Helvetica, sans-serif;
   left: 5%;
   position: relative;
-  font-size: calc(8px + (260 - 14) * ((45vw - 0px) / (1000 - 0)));
+  font-size: calc(0px + (260 - 14) * ((30vw + 10vh - 10px) / (1000 - 0)));
 }
 .s-bubble-contain{
   left: 2vw;
@@ -52,7 +54,7 @@
   max-width: 200px;
 }
 .speech-bubble {
-  font-size: 2vh;
+  font-size: calc(1.5vh + .7vw);
   color: var(--bubble-text);
   padding-left: 10px;
   padding-top: 8px;
