@@ -1,3 +1,11 @@
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(719deg);
+  }
+}
 .swirl {
   position: absolute;
   top: 10%;
@@ -6,6 +14,9 @@
   height: 80%;
   background: url(../images/swirl.svg);
   background-size: 100% 100%;
+}
+.swirl:hover {
+  animation: rotation 4s infinite cubic-bezier(0.5, 0.8, 0.8, 0.5);
 }
 .s-bubble {
   position: absolute;
@@ -31,11 +42,12 @@
 }
 .b-title {
   font-family: Arial, Helvetica, sans-serif;
-  left: 3%;
+  left: 5%;
   position: relative;
-  font-size: calc(2px + (260 - 14) * ((40vw - 0px) / (1000 - 0)));
+  font-size: calc(8px + (260 - 14) * ((45vw - 0px) / (1000 - 0)));
 }
 .s-bubble-contain{
+  left: 2vw;
   width: 18%;
   max-width: 200px;
 }
@@ -54,7 +66,6 @@
 	border-radius: .4em;
   width: 90%;
 }
-
 .speech-bubble:after {
 	content: '';
 	position: absolute;
