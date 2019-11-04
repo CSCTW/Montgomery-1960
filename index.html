@@ -1,4 +1,5 @@
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html lang="en">
 <head>
   <link rel="stylesheet" type="text/css" href="css/default.css">
   <link rel="stylesheet" type="text/css" href="css/brooks-msg.css">
@@ -8,12 +9,12 @@
 </head>
 <body>
 
-  <table class="view">
-    <tr>
+  <table class="view" role="presentation">
+    <tr class="sidebar">
       <td class="guide"><button class="exp-guide"></button>
         <td>
 
-          <table class="text-bubble">
+          <table class="text-bubble" role="presentation">
             <tr>
               <td class="s-bubble-contain">
                 <div class="s-bubble">
@@ -42,7 +43,7 @@
   </table>
 
   <div class="footer">
-    <table class="footer-organize">
+    <table class="footer-organize" role="presentation">
       <tr class="footer-tab">
         <td id="back-contain">
           <a class="fake-button" onclick="backText()" id="back">
@@ -62,7 +63,7 @@
           </a>
         </td>
       </tr>
-  </p>
+  </table>
 </div>
 <script src="js/bubble-content.js"></script>
 </body>

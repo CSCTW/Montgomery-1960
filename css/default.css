@@ -26,10 +26,12 @@ body {
 }
 
 .guide {
+  position: relative;
   background-color: var(--info-back);
   color: var(--guide-text);
   width: 50px;
   font-size: 12px;
+  height: 92.7vh;
 }
 
 .footer-text {
