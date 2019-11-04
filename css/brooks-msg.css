@@ -66,7 +66,8 @@
   left: 5%;
 	background: var(--speech-back);
 	border-radius: .4em;
-  width: 90%;
+  max-width: 90%;
+  width: auto;
 }
 .speech-bubble:after {
 	content: '';
@@ -81,4 +82,14 @@
 	border-bottom: 0;
 	margin-top: -10px;
 	margin-left: -15px;
+}
+#gray {
+  background-image: url("../images/FredGary.jpg");
+  width: 18vh;
+  height: 20vh;
+  background-size: contain;
+  border: 1px solid black;
+}
+#gray:after {
+  border-right-color: gray;
 }
