@@ -33,8 +33,8 @@ function updateAvailability() {
     document.getElementById("back").style.cursor = "not-allowed";
   }
   else if (curr_dialogue == 2) {
-    document.getElementById("front").style.color = "var(--invalid-text)";
-    document.getElementById("front").style.cursor = "not-allowed";
+    document.getElementById("next").style.color = "var(--invalid-text)";
+    document.getElementById("next").style.cursor = "not-allowed";
   }
 }
 
