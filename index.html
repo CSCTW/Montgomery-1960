@@ -42,7 +42,27 @@
   </table>
 
   <div class="footer">
-  <p class="footer-text"><a class="fake-button" onclick="updateText()">Continue</a></p>
+    <table class="footer-organize">
+      <tr class="footer-tab">
+        <td id="back-contain">
+          <a class="fake-button" onclick="backText()" id="back">
+            <p class="footer-text">
+              Back
+            </p>
+          </a>
+        </td>
+        <td>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </td>
+        <td id="front-contain">
+          <a class="fake-button" onclick="nextText()" id="next">
+            <p class="footer-text">
+              Next
+            </p>
+          </a>
+        </td>
+      </tr>
+  </p>
 </div>
 <script src="js/bubble-content.js"></script>
 </body>

@@ -9,11 +9,33 @@ function loadFile(filePath) {
   return result;
 }
 
-function updateText() {
+function nextText() {
+  if (curr_dialogue + 1 > 2) return;
   let x = "intro/";
-  x += curr_dialogue++;
+  x += ++curr_dialogue;
   x += ".txt";
   document.getElementById("bubble-text").innerHTML = loadFile(x);
+  updateAvailability();
 }
 
-let curr_dialogue = 1;
+function backText() {
+  if (curr_dialogue - 1 < 0) return;
+  let x = "intro/";
+  x += --curr_dialogue;
+  x += ".txt";
+  document.getElementById("bubble-text").innerHTML = loadFile(x);
+  updateAvailability();
+}
+
+function updateAvailability() {
+  if (x == 0) {
+    document.getElementById("back").style.color = "var(--invalid-text)";
+    document.getElementById("back").style.cursor = "not-allowed";
+  }
+  else if (x == 2) {
+    document.getElementById("front").style.color = "var(--invalid-text)";
+    document.getElementById("front").style.cursor = "not-allowed";
+  }
+}
+
+let curr_dialogue = 0;
