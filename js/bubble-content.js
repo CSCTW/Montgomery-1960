@@ -10,8 +10,8 @@ function loadFile(filePath) {
 }
 
 function nextText() {
-  if (curr_dialogue + 1 > 2) return;
-  let x = "intro/";
+  if (curr_dialogue + 1 > max_page) return;
+  var x = "intro/";
   x += ++curr_dialogue;
   x += ".txt";
   document.getElementById("bubble-text").innerHTML = loadFile(x);
@@ -19,8 +19,8 @@ function nextText() {
 }
 
 function backText() {
-  if (curr_dialogue - 1 < 0) return;
-  let x = "intro/";
+  if (curr_dialogue - 1 < min_page) return;
+  var x = "intro/";
   x += --curr_dialogue;
   x += ".txt";
   document.getElementById("bubble-text").innerHTML = loadFile(x);
@@ -39,3 +39,5 @@ function updateAvailability() {
 }
 
 let curr_dialogue = 0;
+let min_page = 0;
+let max_page = 2;
