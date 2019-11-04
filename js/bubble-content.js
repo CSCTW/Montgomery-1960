@@ -31,13 +31,18 @@ function updateAvailability() {
   if (curr_dialogue == 0) {
     document.getElementById("back").style.color = "var(--invalid-text)";
     document.getElementById("back").style.cursor = "not-allowed";
+    document.getElementById("next").style.color = "var(--footer-text)";
+    document.getElementById("next").style.cursor = "pointer";
   }
   else if (curr_dialogue == 2) {
     document.getElementById("next").style.color = "var(--invalid-text)";
     document.getElementById("next").style.cursor = "not-allowed";
+    document.getElementById("back").style.color = "var(--footer-text)";
+    document.getElementById("back").style.cursor = "pointer";
   }
 }
 
 let curr_dialogue = 0;
 let min_page = 0;
 let max_page = 2;
+updateAvailability();
