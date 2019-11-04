@@ -40,6 +40,12 @@ function updateAvailability() {
     document.getElementById("back").style.color = "var(--footer-text)";
     document.getElementById("back").style.cursor = "pointer";
   }
+  else {
+    document.getElementById("back").style.color = "var(--footer-text)";
+    document.getElementById("back").style.cursor = "pointer";
+    document.getElementById("next").style.color = "var(--footer-text)";
+    document.getElementById("next").style.cursor = "pointer";
+  }
 }
 
 let curr_dialogue = 0;
