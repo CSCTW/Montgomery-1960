@@ -28,11 +28,11 @@ function backText() {
 }
 
 function updateAvailability() {
-  if (x == 0) {
+  if (curr_dialogue == 0) {
     document.getElementById("back").style.color = "var(--invalid-text)";
     document.getElementById("back").style.cursor = "not-allowed";
   }
-  else if (x == 2) {
+  else if (curr_dialogue == 2) {
     document.getElementById("front").style.color = "var(--invalid-text)";
     document.getElementById("front").style.cursor = "not-allowed";
   }
