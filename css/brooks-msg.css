@@ -84,10 +84,10 @@
 	margin-left: -15px;
 }
 #gray {
-  background-image: url("../images/FredGary.jpg");
-  width: 18vh;
-  height: 20vh;
-  background-size: contain;
+  background-image: url("../images/FredGray.jpg");
+  width: calc(925vh * .03);
+  height: calc(990vh * .03);
+  background-size: cover;
   border: 1px solid black;
 }
 #gray:after {

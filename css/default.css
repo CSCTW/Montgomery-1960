@@ -1,7 +1,7 @@
 :root {
   /* text colors */
   --main-text: white;
-  --bubble-text: var(--main-text);
+  --bubble-text: grey;
   --link-text: var(--main-text);
   --guide-text: black;
   --footer-text: var(--main-text);
@@ -9,7 +9,7 @@
 
   /* backgrounds */
   --brooks-back: #0ce1e8;
-  --speech-back: #4287f5;
+  --speech-back: var(--brooks-back);
   --footer-back: grey;
   --info-back:   grey;
   --active-back: LightGray;
