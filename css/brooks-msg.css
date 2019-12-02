@@ -83,6 +83,7 @@
 	margin-top: -10px;
 	margin-left: -15px;
 }
+
 #gray {
   background-image: url("../images/FredGray.jpg");
   width: calc(925vh * .03);
@@ -91,5 +92,16 @@
   border: 1px solid black;
 }
 #gray:after {
+  border-right-color: gray;
+}
+
+#ems {
+  background-image: url("../images/EMS.jpg");
+  width: calc(925vh * .03);
+  height: calc(990vh * .03);
+  background-size: cover;
+  border: 1px solid black;
+}
+#ems:after {
   border-right-color: gray;
 }
