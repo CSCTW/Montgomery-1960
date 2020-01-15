@@ -50,5 +50,5 @@ function updateAvailability() {
 
 let curr_dialogue = 0;
 let min_page = 0;
-let max_page = 2;
+let max_page = 7;
 updateAvailability();
