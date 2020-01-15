@@ -1,7 +1,7 @@
 :root {
   /* text colors */
   --main-text: white;
-  --bubble-text: white;
+  --bubble-text: #137e6d;
   --link-text: var(--main-text);
   --guide-text: black;
   --footer-text: var(--main-text);
