@@ -1,10 +1,11 @@
 .footer {
+  
   position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
   height: 7.5%;
-  background-color: grey;
+  background-color: Orange;
   color: white;
   text-align: center;
 }
@@ -32,7 +33,7 @@ body {
 }
 
 table, td, th {
-  border: 1px solid black;
+  border: 3px solid Orange;
 }
 
 .brooks-text {
